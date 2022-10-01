@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "420146712683",
+    "project_id": "steps-tracker-425bf",
+    "storage_bucket": "steps-tracker-425bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420146712683:android:0cde8796c7f3d3b014e12e",
+        "android_client_info": {
+          "package_name": "com.example.steps_tracker_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420146712683-k7rv6dsq2lgk05jn07kjal6v08gpphfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.steps_tracker_flutter",
+            "certificate_hash": "1d05d0fd60395d1b80bd5f35657bd39d4e7d6c99"
+          }
+        },
+        {
+          "client_id": "420146712683-qmt78u6o3cp6gq18nuo3f0to4lmv6m1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-YTRS_Wm6p6GcfZgtxPho-xqTwTKva5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420146712683-qmt78u6o3cp6gq18nuo3f0to4lmv6m1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
