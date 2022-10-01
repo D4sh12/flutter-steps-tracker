@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:steps_tracker_flutter/application/models/user.model.dart';
 import 'package:steps_tracker_flutter/infrastructure/repositories/user.repository.dart';

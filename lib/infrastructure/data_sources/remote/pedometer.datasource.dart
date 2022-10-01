@@ -3,10 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:steps_tracker_flutter/application/models/exercise.model.dart';
 import 'package:steps_tracker_flutter/application/models/user.model.dart';
 import 'package:steps_tracker_flutter/core/common_imports.dart';
+import 'package:steps_tracker_flutter/core/services/notification.service.dart';
 import 'package:steps_tracker_flutter/core/utils/helpers/calculations.dart';
 
 final pedometerDataSourceProvider = Provider<PedometerDataSource>(
   (ref) => PedometerDataSourceImpl(
+    ref: ref,
     database: ref.watch(fireStoreProvider),
   ),
 );
@@ -25,12 +27,19 @@ const String exerciseCollection = 'exercise';
 
 class PedometerDataSourceImpl implements PedometerDataSource {
   final FirebaseFirestore database;
+  final Ref ref;
 
-  PedometerDataSourceImpl({required this.database});
+  PedometerDataSourceImpl({required this.database, required this.ref});
 
   @override
   Future<void> updateHealthPoints(
       {required String uid, required int healthPoints}) async {
+    if (healthPoints != 0) {
+      ref.read(localNotificationServiceProvier).addNotification(
+          title: "Health Point earned!",
+          body: "You've earned another point, keep walking!",
+          channel: 'healhPoint');
+    }
     final data = {"healthPoints": healthPoints};
     await database.collection(userCollection).doc(uid).update(data);
   }

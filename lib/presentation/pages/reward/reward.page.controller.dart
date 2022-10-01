@@ -2,7 +2,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:steps_tracker_flutter/application/models/reward.model.dart';
 import 'package:steps_tracker_flutter/infrastructure/repositories/pedometer.repository.dart';
 import 'package:steps_tracker_flutter/infrastructure/repositories/reward.repository.dart';
-import 'package:steps_tracker_flutter/infrastructure/repositories/user.repository.dart';
 import 'package:steps_tracker_flutter/presentation/widgets/toast.dart';
 
 final rewardPageControllerProvider =

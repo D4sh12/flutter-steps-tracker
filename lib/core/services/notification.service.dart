@@ -4,14 +4,15 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 final localNotificationProvider = Provider<FlutterLocalNotificationsPlugin>(
     (ref) => FlutterLocalNotificationsPlugin());
-    
-final localNotificationServiceProvier = Provider((ref) => LocalNoticeService(
-    flutterLocalNotificationsPlugin: ref.watch(localNotificationProvider)));
 
-class LocalNoticeService {
+final localNotificationServiceProvier = Provider((ref) =>
+    LocalNotificationService(
+        flutterLocalNotificationsPlugin: ref.watch(localNotificationProvider)));
+
+class LocalNotificationService {
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
 
-  LocalNoticeService({required this.flutterLocalNotificationsPlugin});
+  LocalNotificationService({required this.flutterLocalNotificationsPlugin});
   Future<void> setup() async {
     const androidSetting = AndroidInitializationSettings('@mipmap/ic_launcher');
 
