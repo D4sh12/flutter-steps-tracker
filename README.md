@@ -25,3 +25,42 @@ Tracking user's activties, specificly walking and continuecely counting footstep
 |:----------|:----------|:----------|:----------|
 | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/health_light.jpg" width=300>     | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/leader_light.jpg" width=300>     | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/reward_light.jpg" width=300>     | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/profile_light.jpg" width=300>     |
 | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/health_dark.jpg" width=300>     | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/leader_dark.jpg" width=300>     | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/reward_dark.jpg" width=300>     | <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/profile_dark.jpg" width=300>    |
+
+
+### Project structure:
+
+```
+lib
+├───application
+│   └───models
+├───core
+│   ├───constants
+│   ├───services
+│   └───utils
+│       ├───helpers
+│       │   └───network
+│       └───ui
+│           └───animations
+├───infrastructure
+│   ├───data_sources
+│   │   └───remote
+│   ├───repositories
+│   └───states
+├───l10n
+└───presentation
+    ├───config
+    ├───layouts
+    ├───pages
+    │   ├───auth
+    │   │   └───widgets
+    │   ├───history
+    │   ├───home
+    │   │   └───widgets
+    │   ├───leaderboard
+    │   ├───profile
+    │   ├───reward
+    │   │   └───widgets
+    │   └───splash
+    └───widgets
+
+```
