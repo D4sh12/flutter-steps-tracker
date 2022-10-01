@@ -1,16 +1,35 @@
-# steps_tracker_flutter
+# Flutter Steps Tracker
 
-A new Flutter project.
+Tracking user's activties, specificly walking and continuecely counting footsteps, this project was built using flutter and integrated with Firebase (backend server) 
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Feature Set 
 
-A few resources to get you started if this is your first Flutter project:
+* [x] Authentication Anonymously with Firebase
+* [x] Tracking steps in real-time and automaticlly exchange steps with Health Point
+* [x] History
+* [x] Notifications
+* [x] Leaderboard page
+* [x] Usable and user-friendly interface
+* [x] Multilingual, supports both Arabic and English
+* [x] Multi themes, supports the light and dark theme
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## UnImplemented 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* [ ] Make the app works on the background
+
+
+## Screenshots :camera:
+
+| Health  | Leaderboard  | Rewards  | Profile  |
+|:----------|:----------|:----------|:----------|
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/health_light.jpg" width=300>     
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/leader_light.jpg" width=300>     
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/reward_light.jpg" width=300>     
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/profile_light.jpg" width=300>     
+|
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/health_dark.jpg" width=300>     
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/leader_dark.jpg" width=300>     
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/reward_dark.jpg" width=300>     
+| <img src="https://github.com/D4sh12/flutter-steps-tracker/blob/master/screenshots/profile_dark.jpg" width=300>    
+|
