@@ -17,6 +17,8 @@ Tracking user's activties, specificly walking and continuecely counting footstep
 ## UnImplemented 
 
 * [ ] Make the app works on the background
+* [ ] Add daily and weekly charts
+* [ ] Add events, so that users try to achive more progress in the app
 
 
 ## Screenshots :camera:
